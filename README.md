@@ -54,7 +54,7 @@ Sets the USB configuration of the opened USB device. Please note there currently
 #### send-ctrl / sc {bmRequestType} {bRequest} {wValue} {wIndex} [wLength] [data] [timeout]
 Sends a USB control message to the opened USB device. bmRequestType, bRequest, wValue and wIndex are mandatory fields. They  show up similarly labelled in the USB specifications and USB capture software, so I won't describe their meaning here.
 The wLength parameter tells the program how many bytes it should allocate for the data buffer. The buffer content is either sent to the USB device or received from the device depending on the transfer direction, which is inferred from the request type. If a data parameter is specified, it is put into the allocated buffer. The timeout parameter specifies how long you want to wait for a response message from the USB device to arrive.
-All parameters except data can be specified as either a decimal value or a hex value (use the 0x prefix). Data is either a string (starting an ending with double quotes ") or the hex representation of binary data (no prefix is needed in that case).
+All parameters except data can be specified as either a decimal value or a hex value (use the 0x prefix). Data is either a string (starting and ending with double quotes `"`) or the hex representation of binary data (no prefix is needed in that case).
 
 #### info
 Displays details about the currently opened device. These details are useful for the claim command. In particular, the info of a hub specifies the bus and address you have to use to claim one of its ports.
@@ -63,3 +63,5 @@ Displays details about the currently opened device. These details are useful for
 Claim a port of a USB hub. Claiming a port prevents the operating system from automatically configuring USB devices that are connected to it. This allows you to manually configure the device without intervention from the operating system.
 bus is the id of the bus the hub is attached to. hub is the address of the hub. port is the port number (starting from 1) on that hub.
 
+#### unclaim
+Unclaim the previously claimed hub port.
