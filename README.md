@@ -18,7 +18,9 @@ Simply start the program as root. It doesn't take any parameters.
 # Functionality
 Please note this program really only provides very basic functionality. To be exact, it provides all the functionality I needed a tool for. However, it should be easily possible to adapt the code for your needs or add commands for the libUSB functionality that isn't yet supported. If you added functionality, please open a pull request!
 
-# Documentation
+# Useage
+This tool is best used together with a program for capturing USB messages such as Wireshark. This combination allows you to watch and record USB communication from the device you want to investigate and replay select messages. The format of the send-ctrl command in particular is very similar to the URB view in Wireshark, so you can copy the values without e.g. converting them to a different base. 
+
 The core concept of the program is that you open a USB device, which you can then manipulate. Before being able to open another device, close the previously opened device. 
 
 ## Commands:
