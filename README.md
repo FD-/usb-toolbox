@@ -14,6 +14,8 @@ You can then compile the program by starting make in the folder that contains th
 Simply start the program as root. It doesn't take any parameters.
 
     sudo ./usb-toolbox
+    
+This will print a short list of commands and start a command prompt.     
 
 # Functionality
 Please note this program really only provides very basic functionality. To be exact, it provides all the functionality I needed a tool for. However, it should be easily possible to adapt the code for your needs or add commands for the libUSB functionality that isn't yet supported. If you added functionality, please open a pull request!
