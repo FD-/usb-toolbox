@@ -26,7 +26,7 @@ This tool is best used together with a program for capturing USB messages such a
 The core concept of the program is that you open a USB device, which you can then manipulate. Before being able to open another device, close the previously opened device. 
 
 ## Commands:
-The available commands can be separated into two groups: The first group doesn't require an opened device for operation, while the second group operates only on the currently open device. Most commands can be invoked using either a full-length descriptive command name or a short two-letter abbreviated form.
+The available commands can be separated into two groups: The first group doesn't require an opened device for operation, while the second group operates only on the currently open device. Most commands can be invoked using either a full-length descriptive command name or a short abbreviated form.
 
 #### list / l
 Lists all available USB devices. This is essentially the same as the lsusb command, except it provides less information.
