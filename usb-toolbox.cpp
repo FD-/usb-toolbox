@@ -15,7 +15,7 @@
 #include <sys/ioctl.h>
 #include <linux/usbdevice_fs.h>
 
-#include <libusb.h>
+#include <libusb-1.0/libusb.h>
 
 #define USBDEVFS_CLAIM_PORT        _IOR('U', 24, unsigned int)
 #define USBDEVFS_RELEASE_PORT      _IOR('U', 25, unsigned int)
