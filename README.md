@@ -4,7 +4,7 @@ A simple tool for testing USB devices. The program allows you to send USB messag
 # Building
 This program depends on the libUSB library. You can install it from `apt-get`:
 
-    sudo apt-get install libusb-dev
+    sudo apt-get install libusb-1.0.0-dev
 
 You can then compile the program by starting make in the folder that contains the usb-toolbox source:
 
